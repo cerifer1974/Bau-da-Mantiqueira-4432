@@ -2,6 +2,7 @@ import { Route, Switch } from "wouter";
 import Index from "./pages/index";
 import { Provider } from "./components/provider";
 import { AgentFeedback, RunableBadge } from "@runablehq/website-runtime";
+const runableBadge = Boolean(import.meta.env.VITE_RUNABLE_BADGE);
 
 function App() {
   return (
